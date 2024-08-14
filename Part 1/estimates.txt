@@ -1,0 +1,3 @@
+For a Multi-AZ, multi-region database, the achievable Recovery Time Objective (RTO) and Recovery Point Objective (RPO) can be optimized to ensure high availability and minimal data loss.
+
+In a single AZ outage, the minimum RTO is typically 1 to 5 minutes, with an RPO of zero, as synchronous replication across AZs ensures an immediate failover with no data loss. For a single region outage, the minimum RTO is longer, usually ranging from 30 minutes to a few hours, due to the complexity of cross-region failover. The minimum RPO in this case is generally within seconds to minutes, reflecting the lag in asynchronous replication, which could result in some data loss.
